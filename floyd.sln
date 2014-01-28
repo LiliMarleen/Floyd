@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_generator", "sample_generator\sample_generator.vcxproj", "{5F8ED574-AB38-4DA5-8680-F0621A796E61}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sequential_algo", "sequential_algo\sequential_algo.vcxproj", "{28F1A5BC-D4F1-4C6B-B1E1-E4006026DB7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{5F8ED574-AB38-4DA5-8680-F0621A796E61}.Debug|Win32.Build.0 = Debug|Win32
 		{5F8ED574-AB38-4DA5-8680-F0621A796E61}.Release|Win32.ActiveCfg = Release|Win32
 		{5F8ED574-AB38-4DA5-8680-F0621A796E61}.Release|Win32.Build.0 = Release|Win32
+		{28F1A5BC-D4F1-4C6B-B1E1-E4006026DB7E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{28F1A5BC-D4F1-4C6B-B1E1-E4006026DB7E}.Debug|Win32.Build.0 = Debug|Win32
+		{28F1A5BC-D4F1-4C6B-B1E1-E4006026DB7E}.Release|Win32.ActiveCfg = Release|Win32
+		{28F1A5BC-D4F1-4C6B-B1E1-E4006026DB7E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

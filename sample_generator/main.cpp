@@ -11,7 +11,7 @@ double gen_rand_double() {
 	if (rand() % absent_prob_denom < absent_prob_nom)
 		return INF;
 	else {
-		w = rand() / 0x7fffffff;
+		w = double(rand()) / RAND_MAX;
 		w += rand() % int(maxw);
 		return w;
 	}
@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
 	srand(time(NULL));
 	if (argc != 9) {
 		fputs("Wrong number of args\n", stderr);
-		return 0;
+		return 1;
 	}
 	for (int i = 1; i < 9; i += 2) {
 		if (!strcmp("--n", argv[i]))
@@ -40,14 +40,14 @@ int main(int argc, char **argv) {
 		}
 	}
 	freopen(out, "wt", stdout);
-	printf("%d %lf\n", n, INF);
+	printf("%d %.9lf\n", n, INF);
 	for (int i = 0; i < n; ++i) {
 		for (int j = 0; j < n; ++j)
 			if (directed) {
 				if (i == j)
 					printf("0 ");
 				else
-					printf("%lf ", gen_rand_double());
+					printf("%.9lf ", gen_rand_double());
 			} else if (!directed && i < j) {
 				matrix[i][j] = matrix[j][i] = gen_rand_double();
 			}
@@ -57,7 +57,7 @@ int main(int argc, char **argv) {
 	if (!directed)
 		for (int i = 0; i < n; ++i) {
 			for (int j = 0; j < n; ++j)
-				printf("%lf ", matrix[i][j]);
+				printf("%.9lf ", matrix[i][j]);
 			putchar('\n');
 		}
 	return 0;
