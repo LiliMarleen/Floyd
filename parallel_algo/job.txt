@@ -1,0 +1,12 @@
+exe C:\Users\LiliMarleen\Documents\GitHub\Floyd\x64\Debug\parallel_algo.exe --input sample.txt --output res.txt
+n 3
+wdir C:\Users\LiliMarleen\Documents\GitHub\Floyd\parallel_algo
+hosts 
+cfg 
+mpich1 
+env 
+map 
+channel default
+extra 
+window no
+log no
